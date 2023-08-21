@@ -30,9 +30,9 @@ print(covid19_response)
 #read_html
 covid19_root_node <- read_html(covid19_response)
 #html_node
-covid19_table_node <- html_node(covid19_root_node, "table")
+covid19_table_node <- html_nodes(covid19_root_node, "table")
 #data_frame
-covid19_data_frame <- html_table(covid19_table_node )
+covid19_data_frame <- html_table(covid19_table_node[2] )
 covid19_data_frame
 
 #Task3
